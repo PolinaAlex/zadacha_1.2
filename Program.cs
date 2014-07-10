@@ -10,29 +10,29 @@ namespace задача_2
     {
         static void Main(string[] args)
         {
-
+            int x1, y1, x2, y2, x3, y3, x4, y4;
             Console.WriteLine("Координаты точек первого отрезка АВ");
             Console.WriteLine("Введите координату Х1 для точки А:");
-            Double x1 = Convert.ToDouble(Console.ReadLine());
+            x1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите координату Y1 для точки А:");
-            Double y1 = Convert.ToDouble(Console.ReadLine());
+            y1 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите координату Х2 для точки В:");
-            Double x2 = Convert.ToDouble(Console.ReadLine());
+            x2 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите координату Y2 для точки В:");
-            Double y2 = Convert.ToDouble(Console.ReadLine());
+            y2 = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Координаты точек второго отрезка СD");
             Console.WriteLine("Введите координату Х3 для точки С:");
-            Double x3 = Convert.ToDouble(Console.ReadLine());
+            x3 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите координату Y3 для точки С:");
-            Double y3 = Convert.ToDouble(Console.ReadLine());
+            y3 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите координату Х4 для точки D:");
-            Double x4 = Convert.ToDouble(Console.ReadLine());
+            x4 = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите координату Y4 для точки D:");
-            Double y4 = Convert.ToDouble(Console.ReadLine());
+            y4 = int.Parse(Console.ReadLine());
 
-            Double k1 = (x2 - x1) / (y2 - y1);
-            Double k2 = (x4 - x3) / (y4 - y3);
+            Double k1 = (y2 - y1) / (x2 - x1);
+            Double k2 = (y4 - y3) / (x4 - x3);
             Double b1 = -k1 * x1 + y1;
             Double b2 = -k2 * x3 + y3;
 
